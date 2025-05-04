@@ -1,0 +1,311 @@
+*{
+  padding: 0px;
+  margin: 0;
+}
+.custom-navbar {
+  background-color: #3b6f6d !important;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+}
+
+ 
+
+li a:hover{
+  background-color:#4e8580  ;
+  color:white;
+  font-size: 1.1rem;
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #3b6f6d;
+  border: none; /* Optional: removes border */
+}
+
+/* Style dropdown items */
+.custom-navbar .dropdown-item {
+  color: white !important;
+}
+
+/* Hover effect for dropdown items */
+.custom-navbar .dropdown-item:hover {
+  background-color: #4e8580;
+  color: white;
+}
+
+
+
+#home > div {
+  background: url(../images/background_image2.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 519px;
+}
+h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10rem;
+  font-family: 'Sacramento', cursive;
+  color: white;
+  margin: 0;
+  padding: 8rem 8rem 0 8rem;
+}
+
+.heroh3{
+  display:flex;
+  flex-direction: column; 
+  align-items:center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color:white;
+  padding:3rem 3rem 5rem 3rem;
+  letter-spacing: 0.2rem;
+  
+}
+
+
+@media(max-width:1200px){
+  h1{
+      font-size:7rem;
+      text-align: center;
+  }
+  .heroh3{
+      font-size:1rem;
+      
+  }
+}
+.profile-img {
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Style for Experience, Project,SKills Heading */
+.experience-heading,.project-heading,.skills-heading {
+  margin: 40px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #518986; /* Set the color of the heading */
+}
+
+/* Style for Web Development Project and Academic Project, Personal and Tehcnincal Heading */
+
+.web-development-projects,.academic-projects,.personal-skills-title,.technical-skills-title,.language-skills-title {
+  margin: 40px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #518986; /* Set the color of the heading */
+}
+
+/* Style for Experience setion */
+
+/* Style for Experience Boxes */
+.experience-box {
+  background-color: #518986; /* Set the background color  */
+  border-radius: 12px; /* Round the corners slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.experience-box:hover {
+  transform: translateY(-10px);
+}
+
+.experience-box h4 {
+  color: #ffffff; /* Set title color to white to contrast with the background */
+}
+
+.experience-box p,
+.experience-box ul li {
+  color: #ffffff; /* Set text color to white for better readability */
+}
+
+.experience-box ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-box ul li {
+  margin-bottom: 10px;
+}
+
+/* Adjust spacing on smaller screens */
+@media (max-width: 768px) {
+  .experience-box {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Styling Project section */
+/* Styling both web devellopment and academic project boxes  */
+
+.web-dev-box,.academic-projects-box{
+  background-color: #f9f9f9;
+  border: 2px solid #4e8580;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.academic-projects-box{
+  margin-top: 30px
+}
+
+/* Initial styling for the project cards */
+.web-development-card,.academic-project-card {
+  background-color: #e6f0ed; 
+  border-radius: 15px;
+  border: 1px solid #4e8580;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.web-development-card:hover,.academic-project-card:hover{
+  background-color: #e1f0ec;
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* For project card background hover */
+/* .web-development-card:hover {
+  background-color: #e1f0ec; /* Change background on hover ) #e1f0ec }*/
+
+.btn-outline-custom:hover {
+  background-color: #4e8580; /* Background color on hover */
+  border-color: #4e8580; /* Same border color as background */
+  color: #fff; /* White text color on hover */
+}
+  
+/* Styling for the buttons inside the cards */
+.web-development-card .btn-outline-custom:hover {
+  background-color: #4e8580;
+  border-color: #4e8580;
+  color: white;
+}
+
+
+/* Styling for the academic project boxes text aligment */
+
+.academic-project-card .card-body {
+  padding: 15px; /* Ensure padding is consistent */
+  text-align: left; /* Align text to the left */
+  word-wrap: break-word; /* Ensure the text wraps properly within the container */
+  overflow-wrap: break-word; /* Ensure long words break and don't overflow */
+}
+
+.academic-project-card .card-text {
+  font-size: 14px; /* Set font size to ensure consistent appearance */
+  margin-bottom: 10px; /* Add some spacing between the description and GitHub link */
+}
+
+.academic-project-card .card-title {
+  font-size: 18px; /* Set a consistent font size for titles */
+  margin-bottom: 10px; /* Add some space between the title and description */
+}
+
+.academic-project-card .card-text a {
+  color: #4e8580; /* Make sure links have a consistent color */
+  text-decoration: none;
+}
+
+
+/* Styling Skills section */
+.personal-skill-card,.technical-skill-card,.language-skill-card{
+  background-color: #ffffff; 
+  border-radius: 15px; 
+  border: 2px solid #4e8580;
+}
+.personal-skill-card .card-body ,.technical-skill-card .card-body,.language-skill-card .card-body{
+  padding: 20px;
+  text-align: center; /* Align text to the left */
+  word-wrap: break-word; /* Ensure the text wraps properly within the container */
+  overflow-wrap: break-word; /* Ensure long words break and don't overflow */
+}
+.personal-skill-card  .card-title, .technical-skill-card .card-title {
+  font-size: 20px;
+  color: #2c3e50
+
+}
+
+.personal-skill-card  .card-text, .technical-skill-card .card-text,.language-skill-card .card-text{
+  font-size: 16px; 
+  color: #7f8c8d;
+  font-size: 14px; /* Set font size to ensure consistent appearance */
+  margin-bottom: 10px; /* Add some spacing */
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+  background-color: #e1f0ec;
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #518986;
+}
+.contact-description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-contact {
+  padding: 12px 25px;
+  background-color: #4e8580;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #3b6863;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #518986;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
